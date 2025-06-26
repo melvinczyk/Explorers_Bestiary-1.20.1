@@ -1,0 +1,11 @@
+#Blacklist specific mobs from appearing in the bestiary (e.g., 'minecraft:enderman')
+mob_blacklist = []
+#Automatically fill all bestiary entries (no progression)
+auto_fill = false
+#Disables kill-based quests and buffs
+disable_quests = false
+#Override mob categories. Format: 'minecraft:zombie=Undead'
+category_overrides = []
+#Add custom quests. Format: 'minecraft:skeleton=100:+2_damage'
+custom_quests = []
+

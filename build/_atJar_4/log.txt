@@ -1,0 +1,7 @@
+Java Launcher: /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/java
+Arguments: '--inJar, /Users/nicholasburczyk/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0/forge-1.20.1-47.4.0-injected.jar, --outJar, /Users/nicholasburczyk/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1.jar, --logFile, accesstransform.log, --atFile, /Users/nicholasburczyk/Desktop/Minecraft server stuff/mods/Explorers_Bestiary-1.20.1/build/_atJar_4/parent_at.cfg'
+Classpath:
+ - /Users/nicholasburczyk/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/8.2.1/accesstransformers-8.2.1-fatjar.jar
+Working directory: /Users/nicholasburczyk/Desktop/Minecraft server stuff/mods/Explorers_Bestiary-1.20.1/build/_atJar_4
+Main class: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================
