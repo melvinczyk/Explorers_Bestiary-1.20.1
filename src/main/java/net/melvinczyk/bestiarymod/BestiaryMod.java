@@ -1,6 +1,7 @@
 package net.melvinczyk.bestiarymod;
 
 import com.mojang.logging.LogUtils;
+import net.melvinczyk.bestiarymod.capability.BestiaryCapability;
 import net.melvinczyk.bestiarymod.config.CommonConfig;
 import net.melvinczyk.bestiarymod.item.ModItems;
 import net.melvinczyk.bestiarymod.network.NetworkHandler;
@@ -36,6 +37,8 @@ public class BestiaryMod {
         modBus.addListener(ModItems::addToCreativeTab);
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(BestiaryCapability.class);
+
 
         NetworkHandler.register();
     }

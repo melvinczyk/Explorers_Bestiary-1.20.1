@@ -1,5 +1,7 @@
 package net.melvinczyk.bestiarymod.item;
 
+import net.melvinczyk.bestiarymod.client.screen.BestiaryScreen;
+import net.minecraft.client.Minecraft;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -15,10 +17,10 @@ public class BestiaryItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        if (!level.isClientSide) {
-            BestiaryMod.LOGGER.info("Bestiary opened by player: " + player.getName().getString());
-            // TODO: Open GUI later
+        if (level.isClientSide) {
+            Minecraft.getInstance().setScreen(new BestiaryScreen());
         }
+
         return InteractionResultHolder.sidedSuccess(player.getItemInHand(hand), level.isClientSide());
     }
 }
